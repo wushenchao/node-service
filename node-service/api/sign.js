@@ -72,7 +72,7 @@ exports.login = function(req, res, next) {
 			if (err || !result) {
 				return ep.emit('prop_err', '用户密码不正确!');
 			}
-			res.send({cdoe: '200', msg: '登陆成功!', data: user});
+			res.send({code: '200', msg: '登陆成功!', data: user});
 		});
 	});
 };
