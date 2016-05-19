@@ -2,26 +2,31 @@ var models  = require('../models');
 var User    = models.User;
 var utility = require('utility');
 var uuid    = require('node-uuid');
+var common  = require('../common/tools');
 
 /**
  * 注册用户数据
- * @param  {[string]}   name      [姓名]
- * @param  {[string]}   loginname [description]
- * @param  {[string]}   pass      [description]
- * @param  {[string]}   email     [description]
- * @param  {[bool]}   active    [description]
+ * @param  {[string]}   user_name      [姓名]
+ * @param  {[string]}   user_loginname [description]
+ * @param  {[string]}   user_pass      [description]
+ * @param  {[string]}   user_imId     [description]
  * @param  {Function} callback  [description]
  * @return {[type]}             [description]
  */
-exports.newAndSave = function (name, loginname, pass, email, active, callback) {
+exports.newAndSave = function (user_name, user_loginname, user_pass, user_imId, callback) {
   var user         = new User();
-  user.name        = loginname;
-  user.loginname   = loginname;
-  user.pass        = pass;
-  user.email       = email;
-  user.active      = active || false;
-  user.accessToken = uuid.v4();
+  user.user_name = user_name;
+  user.user_loginname = user_loginname;
+  user.user_pass = user_pass;
+  user.user_imId = user_imId;
+  
+  var uid = uuid.v4();
+  user.user_id = uid;
+  user.user_token = uid;
 
+  var time = tools.formatDate(new date(), false);
+  user.create_time = time;
+  user.update_time = time;
   user.save(callback);
 };
 
@@ -37,7 +42,7 @@ exports.getUsersByNames = function (names, callback) {
   if (names.length === 0) {
     return callback(null, []);
   }
-  User.find({ loginname: { $in: names } }, callback);
+  User.find({user_name: { $in: names } }, callback);
 };
 
 /**
@@ -45,11 +50,11 @@ exports.getUsersByNames = function (names, callback) {
  * Callback:
  * - err, 数据库异常
  * - user, 用户
- * @param {String} loginName 登录名
+ * @param {String} user_loginname 登录名
  * @param {Function} callback 回调函数
  */
-exports.getUserByLoginName = function (loginName, callback) {
-  User.findOne({'loginname': loginName}, callback);
+exports.getUserByLoginName = function (user_loginname, callback) {
+  User.findOne({user_loginname: user_loginname}, callback);
 };
 
 /**
@@ -65,18 +70,6 @@ exports.getUserById = function (id, callback) {
     return callback();
   }
   User.findOne({_id: id}, callback);
-};
-
-/**
- * 根据邮箱，查找用户
- * Callback:
- * - err, 数据库异常
- * - user, 用户
- * @param {String} email 邮箱地址
- * @param {Function} callback 回调函数
- */
-exports.getUserByMail = function (email, callback) {
-  User.findOne({email: email}, callback);
 };
 
 /**
@@ -117,12 +110,3 @@ exports.getUserByNameAndKey = function (loginname, key, callback) {
   User.findOne({loginname: loginname, retrieve_key: key}, callback);
 };
 
-
-var makeGravatar = function (email) {
-  return 'http://www.gravatar.com/avatar/' + utility.md5(email.toLowerCase()) + '?size=48';
-};
-exports.makeGravatar = makeGravatar;
-
-exports.getGravatar = function (user) {
-  return user.avatar || makeGravatar(user);
-};

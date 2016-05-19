@@ -1,4 +1,4 @@
-var redis  = require('./redis');
+var redis = require('./redis');
 var logger = require('./logger');
 var _  = require('lodash');
 

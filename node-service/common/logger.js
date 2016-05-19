@@ -1,8 +1,7 @@
 var config = require('../config');
+var log4js = require('log4js');
 
 var env = process.env.NODE_ENV || "development";
-
-var log4js = require('log4js');
 
 log4js.configure({
 	appenders: [

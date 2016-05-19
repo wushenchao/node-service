@@ -1,7 +1,8 @@
 var express = require('express');
-var userController = require('./api/user');
-var sign = require('./api/sign');
 var config = require('./config');
+var user = require('./api/user');
+var sign = require('./api/sign');
+var topic = require('./api/topic');
 var router = express.Router();
 
 
@@ -10,5 +11,9 @@ router.post('/register', sign.register);
 router.post('/login', sign.login);
 
 
-router.get('/userInfo/:name', userController.userInfo);
+router.get('/userInfo/:name', user.userInfo);
+
+// topic
+router.get('/sendTopic/:userId',topic.sendTopic);
+
 module.exports = router;
