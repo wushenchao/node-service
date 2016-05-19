@@ -7,6 +7,21 @@ var fs = require('fs');
 var path = __dirname + '/data.txt';
 
 exports.sendTopic = function(req, res, next) {
+	var userId = validator.trim(req.body.userId);
+	var topicTitle = validator.trim(req.body.topicTitle);
+	var topicContent = validator.trim(req.body.topicContent);
+	var topicImages = req.body.topicImages;
+
+	TopicProxy.newAndSave(topicTitle, '', topicContent, topicImages, userId, function(err){
+		if (err) {
+			return res.send({cdoe: '0',msg: '数据保存失败'};
+		}
+		res.send({cdoe: '200',msg: 'success'});
+	});
+};
+
+// GET
+exports.textSendTopic = function(req, res, next) {
 	var userId = req.params.userId;
 	// var userId = validator.trim(req.body.userId);
 	var ep = new eventproxy();

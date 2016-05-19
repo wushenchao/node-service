@@ -9,9 +9,8 @@ var common  = require('../common/tools');
  * @param  {[string]}   user_name      [姓名]
  * @param  {[string]}   user_loginname [description]
  * @param  {[string]}   user_pass      [description]
- * @param  {[string]}   user_imId     [description]
- * @param  {Function} callback  [description]
- * @return {[type]}             [description]
+ * @param  {[string]}   user_imId      [description]
+ * @param  {Function}   callback       [description]
  */
 exports.newAndSave = function (user_name, user_loginname, user_pass, user_imId, callback) {
   var user         = new User();
@@ -23,10 +22,6 @@ exports.newAndSave = function (user_name, user_loginname, user_pass, user_imId, 
   var uid = uuid.v4();
   user.user_id = uid;
   user.user_token = uid;
-
-  var time = tools.formatDate(new date(), false);
-  user.create_time = time;
-  user.update_time = time;
   user.save(callback);
 };
 

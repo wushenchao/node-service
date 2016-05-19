@@ -10,10 +10,17 @@ var router = express.Router();
 router.post('/register', sign.register);
 router.post('/login', sign.login);
 
+// topic
+router.post('/sendTopic', topic.sendTopic);
+
+
+
+
+
 
 router.get('/userInfo/:name', user.userInfo);
 
 // topic
-router.get('/sendTopic/:userId',topic.sendTopic);
+router.get('/textSendTopic/:userId',topic.textSendTopic);
 
 module.exports = router;

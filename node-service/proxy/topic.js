@@ -16,17 +16,17 @@ var tools = require('../common/tools');
  * @return {[type]}              [description]
  */
 exports.newAndSave = function (topic_title, topic_time, topic_content, topic_images, user_Id, callback) {
-  var topic = new Topic();
-  topic.topic_title = topic_title;
-  var to_time = topic_time;
-  if (validator.isNull(to_time)) {
-  	to_time = tools.formatDate(new date(), false);
-  }
-  topic.topic_time = to_time;
-  topic.topic_content = topic_content;
-  topic.topic_images = topic_images;
-  topic.user_Id = user_Id;
-  topic.topic_id = uuid.v4();
-  topic.save(callback);
+	var topic = new Topic();
+	topic.topic_title = topic_title;
+	var to_time = topic_time;
+	if (validator.isNull(to_time)) {
+		to_time = tools.formatDate(new Date(), false);
+	}
+	topic.topic_time = to_time;
+	topic.topic_content = topic_content;
+	topic.topic_images = topic_images;
+	topic.user_Id = user_Id;
+	topic.topic_id = uuid.v4();
+	topic.save(callback);
 };
 
