@@ -7,6 +7,7 @@
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.1",
     "bytes": "^2.3.0",
+    "combined-stream": "^1.0.5",
     "compression": "^1.6.1",
     "connect-redis": "^3.0.2",
     "cookie-parser": "^1.4.1",

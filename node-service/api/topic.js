@@ -14,7 +14,7 @@ exports.sendTopic = function(req, res, next) {
 
 	TopicProxy.newAndSave(topicTitle, '', topicContent, topicImages, userId, function(err){
 		if (err) {
-			return res.send({cdoe: '0',msg: '数据保存失败'};
+			return res.send({cdoe: '0',msg: '数据保存失败'});
 		}
 		res.send({cdoe: '200',msg: 'success'});
 	});

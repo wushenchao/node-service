@@ -14,10 +14,7 @@ router.post('/login', sign.login);
 router.post('/sendTopic', topic.sendTopic);
 
 
-
-
-
-
+router.get('/regi', sign.regi);
 router.get('/userInfo/:name', user.userInfo);
 
 // topic
