@@ -18,6 +18,14 @@ var config = {
 	// 程序运行端口
 	port: 3000,
 	
+	// file
+	upload: {
+		filePath: __dirname + '/public/upload/',
+		fileUrl: '/public/upload/'
+	},
+
+	file_limit: '1MB',
+
 	session_secret: 'node_club_secret', // 务必修改
 	auth_cookie_name: 'node_club',
 

@@ -64,7 +64,7 @@ exports.getUserById = function (id, callback) {
   if (!id) {
     return callback();
   }
-  User.findOne({_id: id}, callback);
+  User.findOne({user_id: id}, callback);
 };
 
 /**
