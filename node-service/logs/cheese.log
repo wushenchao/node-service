@@ -220,3 +220,535 @@ Started 2016-05-25T14:45:01.551Z POST /uplodaFile ::1
 Started 2016-05-25T14:50:11.536Z POST /uplodaFile ::1
 [2016-05-25 22:50:11.573] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"91d68fa764a839538236"},"options":{},"collectionName":"users"} '
 [2016-05-25 22:50:11.580] [INFO] cheese - Completed 200 undefined
+[2016-05-26 10:07:57.626] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 10:07:57.629] [INFO] cheese - God bless love....
+[2016-05-26 10:07:57.629] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 10:07:57.629] [INFO] cheese - 
+[2016-05-26 10:08:04.905] [INFO] cheese - 
+
+Started 2016-05-26T02:08:04.904Z GET / ::1
+[2016-05-26 10:08:04.917] [INFO] cheese - Completed 404 undefined
+[2016-05-26 10:08:04.936] [INFO] cheese - 
+
+Started 2016-05-26T02:08:04.935Z GET /favicon.ico ::1
+[2016-05-26 10:08:04.939] [INFO] cheese - Completed 404 undefined
+[2016-05-26 10:08:04.988] [INFO] cheese - 
+
+Started 2016-05-26T02:08:04.988Z GET /apple-touch-icon-precomposed.png ::1
+[2016-05-26 10:08:04.989] [INFO] cheese - Completed 404 undefined
+[2016-05-26 10:08:04.991] [INFO] cheese - 
+
+Started 2016-05-26T02:08:04.991Z GET /apple-touch-icon.png ::1
+[2016-05-26 10:08:04.993] [INFO] cheese - Completed 404 undefined
+[2016-05-26 10:08:10.957] [INFO] cheese - 
+
+Started 2016-05-26T02:08:10.957Z GET /userInfo/name:%E4%B8%8D%E7%9F%A5%E6%98%AF%E5%93%AA%E4%B8%AA%E5%8F%B7 ::1
+[2016-05-26 10:08:10.978] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_loginname":"name:不知是哪个号"},"options":{},"collectionName":"users"} '
+[2016-05-26 10:08:10.984] [INFO] cheese - Completed 200 undefined
+[2016-05-26 10:09:56.335] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 10:09:56.337] [INFO] cheese - God bless love....
+[2016-05-26 10:09:56.338] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 10:09:56.338] [INFO] cheese - 
+[2016-05-26 10:09:59.389] [INFO] cheese - 
+
+Started 2016-05-26T02:09:59.388Z GET /userInfo/name:%E4%B8%8D%E7%9F%A5%E6%98%AF%E5%93%AA%E4%B8%AA%E5%8F%B7 ::1
+[2016-05-26 10:09:59.408] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_loginname":"name:不知是哪个号"},"options":{},"collectionName":"users"} '
+[2016-05-26 10:09:59.415] [INFO] cheese - Completed 304 undefined
+[2016-05-26 10:42:27.647] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 10:42:27.650] [INFO] cheese - God bless love....
+[2016-05-26 10:42:27.651] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 10:42:27.651] [INFO] cheese - 
+[2016-05-26 10:42:42.961] [INFO] cheese - 
+
+Started 2016-05-26T02:42:42.961Z POST /register ::1
+[2016-05-26 10:42:43.004] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_loginname":"17090136328"},"options":{},"collectionName":"users"} '
+[2016-05-26 10:42:44.345] [INFO] cheese - Completed 200 undefined
+[2016-05-26 10:43:00.444] [INFO] cheese - 
+
+Started 2016-05-26T02:43:00.444Z POST /login ::1
+[2016-05-26 10:43:00.452] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_loginname":"17090136328"},"options":{},"collectionName":"users"} '
+[2016-05-26 10:43:00.747] [INFO] cheese - Completed 200 undefined
+[2016-05-26 10:47:07.885] [INFO] cheese - 
+
+Started 2016-05-26T02:47:07.885Z POST /sendTopic ::1
+[2016-05-26 10:47:07.899] [INFO] cheese - Completed 200 undefined
+[2016-05-26 10:54:50.112] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 10:54:50.115] [INFO] cheese - God bless love....
+[2016-05-26 10:54:50.116] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 10:54:50.116] [INFO] cheese - 
+[2016-05-26 10:55:12.556] [INFO] cheese - 
+
+Started 2016-05-26T02:55:12.555Z POST /sendTopic ::1
+[2016-05-26 10:55:12.613] [INFO] cheese - Completed 200 undefined
+[2016-05-26 10:55:42.288] [INFO] cheese - 
+
+Started 2016-05-26T02:55:42.288Z POST /praiseTopic ::1
+[2016-05-26 10:55:42.295] [INFO] cheese - Completed 404 undefined
+[2016-05-26 10:56:40.993] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 10:56:40.997] [INFO] cheese - God bless love....
+[2016-05-26 10:56:40.998] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 10:56:40.998] [INFO] cheese - 
+[2016-05-26 10:56:45.097] [INFO] cheese - 
+
+Started 2016-05-26T02:56:45.096Z POST /praiseTopic ::1
+[2016-05-26 10:56:45.148] [INFO] cheese - Completed 500 undefined
+[2016-05-26 10:57:41.253] [INFO] cheese - 
+
+Started 2016-05-26T02:57:41.253Z POST /praiseTopic ::1
+[2016-05-26 10:57:41.263] [INFO] cheese - Completed 500 undefined
+[2016-05-26 10:58:46.626] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 10:58:46.629] [INFO] cheese - God bless love....
+[2016-05-26 10:58:46.629] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 10:58:46.630] [INFO] cheese - 
+[2016-05-26 10:58:49.482] [INFO] cheese - 
+
+Started 2016-05-26T02:58:49.481Z POST /praiseTopic ::1
+[2016-05-26 10:58:49.534] [INFO] cheese - Completed 500 undefined
+[2016-05-26 11:01:18.243] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:01:18.247] [INFO] cheese - God bless love....
+[2016-05-26 11:01:18.248] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:01:18.248] [INFO] cheese - 
+[2016-05-26 11:01:20.234] [INFO] cheese - 
+
+Started 2016-05-26T03:01:20.233Z POST /praiseTopic ::1
+[2016-05-26 11:01:20.265] [INFO] cheese - Completed 500 undefined
+[2016-05-26 11:05:30.253] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:05:30.256] [INFO] cheese - God bless love....
+[2016-05-26 11:05:30.256] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:05:30.257] [INFO] cheese - 
+[2016-05-26 11:05:56.368] [INFO] cheese - 
+
+Started 2016-05-26T03:05:56.365Z POST /praiseTopic ::1
+[2016-05-26 11:05:56.397] [INFO] cheese - Completed 500 undefined
+[2016-05-26 11:08:50.623] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:08:50.626] [INFO] cheese - God bless love....
+[2016-05-26 11:08:50.627] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:08:50.627] [INFO] cheese - 
+[2016-05-26 11:08:52.293] [INFO] cheese - 
+
+Started 2016-05-26T03:08:52.293Z POST /praiseTopic ::1
+[2016-05-26 11:08:52.352] [INFO] cheese - Completed 500 undefined
+[2016-05-26 11:12:04.136] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:12:04.139] [INFO] cheese - God bless love....
+[2016-05-26 11:12:04.139] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:12:04.140] [INFO] cheese - 
+[2016-05-26 11:12:07.668] [INFO] cheese - 
+
+Started 2016-05-26T03:12:07.667Z POST /praiseTopic ::1
+[2016-05-26 11:12:07.725] [INFO] cheese - Completed 500 undefined
+[2016-05-26 11:13:54.613] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:13:54.616] [INFO] cheese - God bless love....
+[2016-05-26 11:13:54.617] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:13:54.617] [INFO] cheese - 
+[2016-05-26 11:13:57.078] [INFO] cheese - 
+
+Started 2016-05-26T03:13:57.077Z POST /praTopic ::1
+[2016-05-26 11:13:57.118] [INFO] cheese - Completed 500 undefined
+[2016-05-26 11:15:43.614] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:15:43.617] [INFO] cheese - God bless love....
+[2016-05-26 11:15:43.617] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:15:43.618] [INFO] cheese - 
+[2016-05-26 11:15:45.346] [INFO] cheese - 
+
+Started 2016-05-26T03:15:45.345Z POST /praTopic ::1
+[2016-05-26 11:15:45.399] [INFO] cheese - Completed 500 undefined
+[2016-05-26 11:21:36.110] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:21:36.113] [INFO] cheese - God bless love....
+[2016-05-26 11:21:36.113] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:21:36.114] [INFO] cheese - 
+[2016-05-26 11:21:47.474] [INFO] cheese - 
+
+Started 2016-05-26T03:21:47.473Z POST /praTopic ::1
+[2016-05-26 11:21:47.524] [INFO] cheese - Completed 500 undefined
+[2016-05-26 11:23:20.913] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:23:20.915] [INFO] cheese - God bless love....
+[2016-05-26 11:23:20.916] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:23:20.917] [INFO] cheese - 
+[2016-05-26 11:23:22.499] [INFO] cheese - 
+
+Started 2016-05-26T03:23:22.498Z POST /praTopic ::1
+[2016-05-26 11:24:12.426] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:24:12.429] [INFO] cheese - God bless love....
+[2016-05-26 11:24:12.430] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:24:12.430] [INFO] cheese - 
+[2016-05-26 11:24:16.104] [INFO] cheese - 
+
+Started 2016-05-26T03:24:16.103Z POST /praTopic ::1
+[2016-05-26 11:24:16.142] [INFO] cheese - Completed 500 undefined
+[2016-05-26 11:25:14.475] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:25:14.478] [INFO] cheese - God bless love....
+[2016-05-26 11:25:14.478] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:25:14.479] [INFO] cheese - 
+[2016-05-26 11:25:15.785] [INFO] cheese - 
+
+Started 2016-05-26T03:25:15.784Z POST /praTopic ::1
+[2016-05-26 11:25:15.818] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 11:25:15.826] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 11:25:15.834] [INFO] cheese - Completed 200 undefined
+[2016-05-26 11:29:40.942] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:29:40.945] [INFO] cheese - God bless love....
+[2016-05-26 11:29:40.946] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:29:40.946] [INFO] cheese - 
+[2016-05-26 11:29:42.222] [INFO] cheese - 
+
+Started 2016-05-26T03:29:42.221Z POST /praTopic ::1
+[2016-05-26 11:29:42.261] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 11:29:42.269] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 11:29:42.279] [INFO] cheese - Completed 200 undefined
+[2016-05-26 11:33:21.581] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 11:33:21.584] [INFO] cheese - God bless love....
+[2016-05-26 11:33:21.584] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 11:33:21.585] [INFO] cheese - 
+[2016-05-26 11:33:28.398] [INFO] cheese - 
+
+Started 2016-05-26T03:33:28.397Z POST /praTopic ::1
+[2016-05-26 11:33:28.458] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 11:33:28.465] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 11:33:28.482] [INFO] cheese - Completed 200 undefined
+[2016-05-26 11:35:21.865] [INFO] cheese - 
+
+Started 2016-05-26T03:35:21.865Z POST /praTopic ::1
+[2016-05-26 11:35:21.869] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 11:35:21.872] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 11:35:21.877] [INFO] cheese - Completed 200 undefined
+[2016-05-26 13:35:37.393] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 13:35:37.396] [INFO] cheese - God bless love....
+[2016-05-26 13:35:37.396] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 13:35:37.396] [INFO] cheese - 
+[2016-05-26 13:35:55.102] [INFO] cheese - 
+
+Started 2016-05-26T05:35:55.101Z POST /praTopic ::1
+[2016-05-26 13:35:55.135] [INFO] cheese - Completed 404 undefined
+[2016-05-26 13:36:22.168] [INFO] cheese - 
+
+Started 2016-05-26T05:36:22.168Z POST /praiseTopic ::1
+[2016-05-26 13:36:22.185] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 13:36:22.195] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 13:36:22.202] [INFO] cheese - Completed 200 undefined
+[2016-05-26 13:37:35.767] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 13:37:35.771] [INFO] cheese - God bless love....
+[2016-05-26 13:37:35.771] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 13:37:35.772] [INFO] cheese - 
+[2016-05-26 13:37:37.318] [INFO] cheese - 
+
+Started 2016-05-26T05:37:37.318Z POST /praiseTopic ::1
+[2016-05-26 13:37:37.363] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 13:37:37.372] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 13:37:37.380] [INFO] cheese - Completed 200 undefined
+[2016-05-26 13:39:07.275] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 13:39:07.277] [INFO] cheese - God bless love....
+[2016-05-26 13:39:07.278] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 13:39:07.278] [INFO] cheese - 
+[2016-05-26 13:39:12.110] [INFO] cheese - 
+
+Started 2016-05-26T05:39:12.109Z POST /praiseTopic ::1
+[2016-05-26 13:39:12.164] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 13:39:12.172] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 13:39:12.180] [INFO] cheese - Completed 200 undefined
+[2016-05-26 13:41:35.963] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 13:41:35.967] [INFO] cheese - God bless love....
+[2016-05-26 13:41:35.968] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 13:41:35.968] [INFO] cheese - 
+[2016-05-26 13:41:38.854] [INFO] cheese - 
+
+Started 2016-05-26T05:41:38.853Z POST /praiseTopic ::1
+[2016-05-26 13:41:38.897] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 13:41:38.906] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 13:41:38.915] [INFO] cheese - Completed 200 undefined
+[2016-05-26 13:42:27.802] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 13:42:27.805] [INFO] cheese - God bless love....
+[2016-05-26 13:42:27.806] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 13:42:27.806] [INFO] cheese - 
+[2016-05-26 13:42:29.440] [INFO] cheese - 
+
+Started 2016-05-26T05:42:29.438Z POST /praiseTopic ::1
+[2016-05-26 13:42:29.494] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 13:42:29.501] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 13:42:29.509] [INFO] cheese - Completed 200 undefined
+[2016-05-26 13:44:17.229] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 13:44:17.232] [INFO] cheese - God bless love....
+[2016-05-26 13:44:17.233] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 13:44:17.233] [INFO] cheese - 
+[2016-05-26 13:44:18.967] [INFO] cheese - 
+
+Started 2016-05-26T05:44:18.966Z POST /praiseTopic ::1
+[2016-05-26 13:44:19.017] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 13:44:19.027] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 13:44:19.035] [INFO] cheese - Completed 200 undefined
+[2016-05-26 13:45:28.192] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 13:45:28.195] [INFO] cheese - God bless love....
+[2016-05-26 13:45:28.196] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 13:45:28.196] [INFO] cheese - 
+[2016-05-26 13:45:29.461] [INFO] cheese - 
+
+Started 2016-05-26T05:45:29.458Z POST /praiseTopic ::1
+[2016-05-26 13:45:29.504] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 13:45:29.514] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 13:45:29.525] [INFO] cheese - Completed 200 undefined
+[2016-05-26 13:46:57.190] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 13:46:57.193] [INFO] cheese - God bless love....
+[2016-05-26 13:46:57.193] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 13:46:57.194] [INFO] cheese - 
+[2016-05-26 13:47:08.369] [INFO] cheese - 
+
+Started 2016-05-26T05:47:08.368Z POST /sendTopic ::1
+[2016-05-26 13:47:08.405] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:01:19.539] [INFO] cheese - 
+
+Started 2016-05-26T06:01:19.539Z POST /sendTopic ::1
+[2016-05-26 14:01:19.546] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:16:52.619] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 14:16:52.622] [INFO] cheese - God bless love....
+[2016-05-26 14:16:52.623] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 14:16:52.623] [INFO] cheese - 
+[2016-05-26 14:17:06.219] [INFO] cheese - 
+
+Started 2016-05-26T06:17:06.218Z POST /praiseTopic ::1
+[2016-05-26 14:17:06.286] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 14:17:06.297] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 14:17:06.310] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:17:12.004] [INFO] cheese - 
+
+Started 2016-05-26T06:17:12.004Z POST /sendTopic ::1
+[2016-05-26 14:17:12.012] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:18:10.012] [INFO] cheese - 
+
+Started 2016-05-26T06:18:10.011Z POST /sendTopic ::1
+[2016-05-26 14:18:10.015] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:18:42.248] [INFO] cheese - 
+
+Started 2016-05-26T06:18:42.248Z POST /praiseTopic ::1
+[2016-05-26 14:18:42.255] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{"topic_id":"53a2dd6a-f68f-4d17-bba8-7de0a6ad0f65"},"options":{},"collectionName":"topics"} '
+[2016-05-26 14:18:42.258] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 14:18:42.261] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:18:44.338] [INFO] cheese - 
+
+Started 2016-05-26T06:18:44.338Z POST /sendTopic ::1
+[2016-05-26 14:18:44.342] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:23:34.728] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 14:23:34.731] [INFO] cheese - God bless love....
+[2016-05-26 14:23:34.731] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 14:23:34.732] [INFO] cheese - 
+[2016-05-26 14:23:35.859] [INFO] cheese - 
+
+Started 2016-05-26T06:23:35.858Z POST /sendTopic ::1
+[2016-05-26 14:23:35.902] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:24:09.366] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 14:24:09.369] [INFO] cheese - God bless love....
+[2016-05-26 14:24:09.369] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 14:24:09.369] [INFO] cheese - 
+[2016-05-26 14:24:13.015] [INFO] cheese - 
+
+Started 2016-05-26T06:24:13.015Z POST /sendTopic ::1
+[2016-05-26 14:24:13.040] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:26:05.508] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 14:26:05.510] [INFO] cheese - God bless love....
+[2016-05-26 14:26:05.511] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 14:26:05.511] [INFO] cheese - 
+[2016-05-26 14:26:07.588] [INFO] cheese - 
+
+Started 2016-05-26T06:26:07.586Z POST /sendTopic ::1
+[2016-05-26 14:26:07.617] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:26:33.643] [INFO] cheese - 
+
+Started 2016-05-26T06:26:33.642Z POST /sendTopic ::1
+[2016-05-26 14:26:33.651] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:27:11.255] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 14:27:11.258] [INFO] cheese - God bless love....
+[2016-05-26 14:27:11.259] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 14:27:11.259] [INFO] cheese - 
+[2016-05-26 14:27:13.204] [INFO] cheese - 
+
+Started 2016-05-26T06:27:13.203Z POST /sendTopic ::1
+[2016-05-26 14:27:13.244] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:27:34.844] [INFO] cheese - 
+
+Started 2016-05-26T06:27:34.844Z POST /sendTopic ::1
+[2016-05-26 14:27:34.850] [INFO] cheese - Completed 200 undefined
+[2016-05-26 14:27:59.043] [INFO] cheese - 
+
+Started 2016-05-26T06:27:59.043Z POST /sendTopic ::1
+[2016-05-26 14:27:59.057] [INFO] cheese - Completed 500 undefined
+[2016-05-26 14:48:36.596] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 14:48:36.599] [INFO] cheese - God bless love....
+[2016-05-26 14:48:36.600] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 14:48:36.600] [INFO] cheese - 
+[2016-05-26 14:48:47.608] [INFO] cheese - 
+
+Started 2016-05-26T06:48:47.607Z POST /sendTopic ::1
+[2016-05-26 14:48:47.684] [INFO] cheese - Completed 200 undefined
+[2016-05-26 16:43:41.602] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 16:43:41.605] [INFO] cheese - God bless love....
+[2016-05-26 16:43:41.606] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 16:43:41.606] [INFO] cheese - 
+[2016-05-26 16:49:52.916] [INFO] cheese - 
+
+Started 2016-05-26T08:49:52.914Z POST /getTopics ::1
+[2016-05-26 16:49:52.972] [ERROR] cheese - traceMQuery error: { [MongoError: Failed to parse: { find: "topics", filter: {}, sort: { topic_time: -1 }, skip: "1", limit: "20" }. 'skip' field must be numeric.]
+  name: 'MongoError',
+  message: 'Failed to parse: { find: "topics", filter: {}, sort: { topic_time: -1 }, skip: "1", limit: "20" }. \'skip\' field must be numeric.',
+  waitedMS: 0,
+  ok: 0,
+  errmsg: 'Failed to parse: { find: "topics", filter: {}, sort: { topic_time: -1 }, skip: "1", limit: "20" }. \'skip\' field must be numeric.',
+  code: 9 }
+MongoError: Failed to parse: { find: "topics", filter: {}, sort: { topic_time: -1 }, skip: "1", limit: "20" }. 'skip' field must be numeric.
+  at Function.MongoError.create (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/error.js:31:11)
+  at queryCallback (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:200:36)
+  at [object Object].Callbacks.emit (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+  at [object Object].messageHandler (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+  at Socket.<anonymous> (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+  at Socket.emit (events.js:109:17)
+  at readableAddChunk (_stream_readable.js:164:16)
+  at Socket.Readable.push (_stream_readable.js:128:10)
+  at TCP.onread (net.js:540:20)
+
+[2016-05-26 16:49:52.977] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{},"options":{"sort":{"topic_time":-1},"limit":"20","skip":"1"},"collectionName":"topics"} '
+[2016-05-26 16:49:52.984] [INFO] cheese - Completed 200 undefined
+[2016-05-26 16:54:38.319] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 16:54:38.322] [INFO] cheese - God bless love....
+[2016-05-26 16:54:38.323] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 16:54:38.323] [INFO] cheese - 
+[2016-05-26 16:54:40.259] [INFO] cheese - 
+
+Started 2016-05-26T08:54:40.258Z POST /getTopics ::1
+[2016-05-26 16:54:40.303] [ERROR] cheese - traceMQuery error: { [MongoError: Unsupported projection option: sort: { topic_time: -1 }]
+  name: 'MongoError',
+  message: 'Unsupported projection option: sort: { topic_time: -1 }',
+  waitedMS: 0,
+  ok: 0,
+  errmsg: 'Unsupported projection option: sort: { topic_time: -1 }',
+  code: 2 }
+MongoError: Unsupported projection option: sort: { topic_time: -1 }
+  at Function.MongoError.create (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/error.js:31:11)
+  at queryCallback (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:200:36)
+  at [object Object].Callbacks.emit (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+  at [object Object].messageHandler (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+  at Socket.<anonymous> (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+  at Socket.emit (events.js:109:17)
+  at readableAddChunk (_stream_readable.js:164:16)
+  at Socket.Readable.push (_stream_readable.js:128:10)
+  at TCP.onread (net.js:540:20)
+
+[2016-05-26 16:54:40.308] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{},"options":{"fields":{"sort":{"topic_time":-1},"limit":"20","skip":"0"}},"collectionName":"topics"} '
+[2016-05-26 16:54:40.316] [INFO] cheese - Completed 200 undefined
+[2016-05-26 16:55:36.026] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 16:55:36.029] [INFO] cheese - God bless love....
+[2016-05-26 16:55:36.030] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 16:55:36.030] [INFO] cheese - 
+[2016-05-26 16:55:37.953] [INFO] cheese - 
+
+Started 2016-05-26T08:55:37.952Z POST /getTopics ::1
+[2016-05-26 16:55:37.997] [ERROR] cheese - traceMQuery error: { [MongoError: Failed to parse: { find: "topics", filter: {}, sort: { topic_time: -1 }, skip: "0", limit: "20" }. 'skip' field must be numeric.]
+  name: 'MongoError',
+  message: 'Failed to parse: { find: "topics", filter: {}, sort: { topic_time: -1 }, skip: "0", limit: "20" }. \'skip\' field must be numeric.',
+  waitedMS: 0,
+  ok: 0,
+  errmsg: 'Failed to parse: { find: "topics", filter: {}, sort: { topic_time: -1 }, skip: "0", limit: "20" }. \'skip\' field must be numeric.',
+  code: 9 }
+MongoError: Failed to parse: { find: "topics", filter: {}, sort: { topic_time: -1 }, skip: "0", limit: "20" }. 'skip' field must be numeric.
+  at Function.MongoError.create (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/error.js:31:11)
+  at queryCallback (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:200:36)
+  at [object Object].Callbacks.emit (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+  at [object Object].messageHandler (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+  at Socket.<anonymous> (/Users/wushenchao/Documents/node/node-service/node-service/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+  at Socket.emit (events.js:109:17)
+  at readableAddChunk (_stream_readable.js:164:16)
+  at Socket.Readable.push (_stream_readable.js:128:10)
+  at TCP.onread (net.js:540:20)
+
+[2016-05-26 16:55:38.001] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{},"options":{"sort":{"topic_time":-1},"limit":"20","skip":"0"},"collectionName":"topics"} '
+[2016-05-26 16:55:38.010] [INFO] cheese - Completed 200 undefined
+[2016-05-26 16:58:22.335] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 16:58:22.339] [INFO] cheese - God bless love....
+[2016-05-26 16:58:22.340] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 16:58:22.340] [INFO] cheese - 
+[2016-05-26 16:58:24.938] [INFO] cheese - 
+
+Started 2016-05-26T08:58:24.937Z POST /getTopics ::1
+[2016-05-26 16:58:24.986] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{},"options":{"sort":{"topic_time":-1},"limit":20,"skip":0},"collectionName":"topics"} '
+[2016-05-26 16:58:25.013] [INFO] cheese - Completed 200 undefined
+[2016-05-26 17:01:59.912] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 17:01:59.915] [INFO] cheese - God bless love....
+[2016-05-26 17:01:59.915] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 17:01:59.916] [INFO] cheese - 
+[2016-05-26 17:02:01.145] [INFO] cheese - 
+
+Started 2016-05-26T09:02:01.144Z POST /getTopics ::1
+[2016-05-26 17:02:01.194] [DEBUG] cheese - undefined 'topics.undefined {"conditions":{},"options":{"sort":{"topic_time":-1},"limit":20,"skip":0},"collectionName":"topics"} '
+[2016-05-26 17:02:01.224] [INFO] cheese - Completed 200 undefined
+[2016-05-26 17:47:27.485] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 17:47:27.489] [INFO] cheese - God bless love....
+[2016-05-26 17:47:27.490] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 17:47:27.491] [INFO] cheese - 
+[2016-05-26 17:47:41.892] [INFO] cheese - 
+
+Started 2016-05-26T09:47:41.891Z POST /upUserHeader ::1
+[2016-05-26 17:47:41.944] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 17:50:19.527] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 17:50:19.530] [INFO] cheese - God bless love....
+[2016-05-26 17:50:19.531] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 17:50:19.531] [INFO] cheese - 
+[2016-05-26 17:50:21.754] [INFO] cheese - 
+
+Started 2016-05-26T09:50:21.753Z POST /upUserHeader ::1
+[2016-05-26 17:50:21.788] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 17:51:28.349] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 17:51:28.352] [INFO] cheese - God bless love....
+[2016-05-26 17:51:28.353] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 17:51:28.353] [INFO] cheese - 
+[2016-05-26 17:51:30.700] [INFO] cheese - 
+
+Started 2016-05-26T09:51:30.698Z POST /upUserHeader ::1
+[2016-05-26 17:51:30.738] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 17:53:21.060] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 17:53:21.066] [INFO] cheese - God bless love....
+[2016-05-26 17:53:21.067] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 17:53:21.068] [INFO] cheese - 
+[2016-05-26 17:53:22.870] [INFO] cheese - 
+
+Started 2016-05-26T09:53:22.870Z POST /upUserHeader ::1
+[2016-05-26 17:53:22.896] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 17:54:39.928] [INFO] cheese - 
+
+Started 2016-05-26T09:54:39.928Z POST /uplodaFile ::1
+[2016-05-26 17:54:39.937] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 17:56:45.240] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 17:56:45.243] [INFO] cheese - God bless love....
+[2016-05-26 17:56:45.244] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 17:56:45.244] [INFO] cheese - 
+[2016-05-26 17:56:46.472] [INFO] cheese - 
+
+Started 2016-05-26T09:56:46.470Z POST /uplodaFile ::1
+[2016-05-26 17:56:46.509] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 17:57:14.453] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 17:57:14.456] [INFO] cheese - God bless love....
+[2016-05-26 17:57:14.457] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 17:57:14.457] [INFO] cheese - 
+[2016-05-26 17:57:16.010] [INFO] cheese - 
+
+Started 2016-05-26T09:57:16.009Z POST /uplodaFile ::1
+[2016-05-26 17:57:16.050] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 17:57:37.360] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 17:57:37.363] [INFO] cheese - God bless love....
+[2016-05-26 17:57:37.364] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 17:57:37.364] [INFO] cheese - 
+[2016-05-26 17:57:38.638] [INFO] cheese - 
+
+Started 2016-05-26T09:57:38.637Z POST /uplodaFile ::1
+[2016-05-26 17:57:38.673] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 17:58:50.650] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 17:58:50.653] [INFO] cheese - God bless love....
+[2016-05-26 17:58:50.654] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 17:58:50.654] [INFO] cheese - 
+[2016-05-26 17:58:52.227] [INFO] cheese - 
+
+Started 2016-05-26T09:58:52.225Z POST /uplodaFile ::1
+[2016-05-26 17:58:52.266] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '
+[2016-05-26 18:00:12.445] [INFO] cheese - NodeClub listening on port 3000
+[2016-05-26 18:00:12.449] [INFO] cheese - God bless love....
+[2016-05-26 18:00:12.450] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-05-26 18:00:12.450] [INFO] cheese - 
+[2016-05-26 18:00:13.746] [INFO] cheese - 
+
+Started 2016-05-26T10:00:13.745Z POST /uplodaFile ::1
+[2016-05-26 18:00:13.786] [DEBUG] cheese - undefined 'users.undefined {"conditions":{"user_id":"507aee5e-6740-4fc9-87c6-d098245382c6"},"options":{},"collectionName":"users"} '

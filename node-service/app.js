@@ -42,10 +42,8 @@ app.use('/public', express.static(staticDir));
 // 通用的中间件
 app.use(require('response-time')());
 app.use(helmet.frameguard('sameorigin'));
-// app.use(bodyParser.json({limit: '1mb'}));
-app.use(bodyParser.urlencoded({ extended: false, limit: '1mb' }));
 app.use(bodyParser.json());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+app.use(bodyParser.urlencoded({ extended: true, limit: '1mb' }));
 app.use(require('method-override')());
 app.use(require('cookie-parser')(config.session_secret));
 app.use(compress());

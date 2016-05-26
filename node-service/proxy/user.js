@@ -13,7 +13,7 @@ var common  = require('../common/tools');
  * @param  {Function}   callback       [description]
  */
 exports.newAndSave = function (user_name, user_loginname, user_pass, user_imId, callback) {
-  var user         = new User();
+  var user = new User();
   user.user_name = user_name;
   user.user_loginname = user_loginname;
   user.user_pass = user_pass;

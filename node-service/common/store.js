@@ -19,3 +19,16 @@ exports.upload = function (file, options, callback) {
   file.pipe(fs.createWriteStream(filePath));
 };
 
+// exports.uploadHeader = function(file, options, callback) {
+//   var filename = options.filename;
+//   console.log('-----' + filename);
+//   var upload_path = config.uploadHeader.filePath;
+//   var base_url    = config.uploadHeader.fileUrl;
+//   var filePath    = upload_path + filename;
+//   var fileUrl     = base_url + filename;
+//   file.on('end', function () {
+//     callback(null, {url: fileUrl});
+//   });
+//   file.pipe(fs.createWriteStream(filePath));
+// };
+

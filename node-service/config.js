@@ -24,6 +24,12 @@ var config = {
 		fileUrl: '/public/upload/'
 	},
 
+	// 头像
+	uploadHeader: {
+		filePath: __dirname + '/public/uploadHeader/',
+		fileUrl: '/public/uploadHeader/'
+	},
+
 	file_limit: '1MB',
 
 	session_secret: 'node_club_secret', // 务必修改
