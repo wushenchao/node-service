@@ -9,7 +9,7 @@ var UserSchema = new Schema({
   user_name: { type: String},
   user_pass: { type: String },
   user_email: { type: String},
-  user_head_image: {type: String},
+  user_head_url: {type: String},
   user_location: { type: String },
   user_level: { type: String },
 

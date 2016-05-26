@@ -102,6 +102,6 @@ exports.getUsersByQuery = function (query, opt, callback) {
  * @param {Function} callback 回调函数
  */
 exports.getUserByNameAndKey = function (loginname, key, callback) {
-  User.findOne({loginname: loginname, retrieve_key: key}, callback);
+  User.findOne({user_loginname: loginname, retrieve_key: key}, callback);
 };
 

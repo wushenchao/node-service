@@ -3,14 +3,16 @@ var UserProxy = require('../proxy').User;
 var store = require('../common/store');
 var config = require('../config');
 var validator = require('validator');
+var fs = require('fs');
+var path = require('path');
 
 exports.uplodaFile = function (req, res, next) {
 
 	var ep = new eventproxy();
 	ep.fail(next);
-    req.pipe(req.busboy);
 
 	var paramsData = {};
+	req.pipe(req.busboy);
 	req.busboy.on('field', function(fieldname, val, valTruncated, keyTruncated) {
 		paramsData[fieldname] = val;
 	});
@@ -24,28 +26,27 @@ exports.uplodaFile = function (req, res, next) {
 			return res.send({code: '0', msg: '参数错误！'});
 		}
     });
-    
-	ep.all('userId',function(userId){
+
+	req.busboy.on('file', function (fieldname, file, filename, encoding, mimetype) {
+		file.on('limit', function(){
+			return res.send({code: '0', msg: '文件过大，最大为' + config.file_limit});
+		});
+		store.upload(file, {filename: filename}, function(err, result) {
+			console.log('bbbbb'+ filename);
+			if (err) {
+				return next(err);
+			}
+			ep.emit('upFileUrl',result.url);
+		});
+	});
+
+	ep.all('userId','upFileUrl',function(userId, fileUrl) {
 		UserProxy.getUserById(userId, ep.done(function(user){
 			if (!user) {
 				return res.send({cdoe: '0',msg: '用户不存在!'});
 			}
-			ep.emit('upFile',user);
+			res.send({code: '200', msg: 'success', url: fileUrl});
 		}));
-	});
-
-	ep.all('upFile', function(user){
-		req.busboy.on('file', function (fieldname, file, filename, encoding, mimetype) {
-			file.on('limit', function(){
-				return res.send({code: '0', msg: '文件过大，最大为' + config.file_limit});
-			});
-			store.upload(file, {filename: filename}, function(err, result) {
-				if (err) {
-					return next(err);
-				}
-				return res.send({code: '200', msg: 'success', url: result.url});
-			});
-		});
 	});
 };
 
@@ -54,8 +55,8 @@ exports.upUserHeader = function(req, res, next){
 	var ep = new eventproxy();
 	ep.fail(next);
 
-	req.pipe(req.busboy);
 	var paramsData = {};
+	req.pipe(req.busboy);
 	req.busboy.on('field', function(fieldname, val, valTruncated, keyTruncated) {
 		paramsData[fieldname] = val;
 	});
@@ -66,33 +67,39 @@ exports.upUserHeader = function(req, res, next){
 			ep.emit('userId',paramsData.userId);
 		}
 		else {
-			return res.send({code: '0', msg: '用户不存在！'});
+			return res.send({code: '0', msg: '参数错误！'});
 		}
     });
 
-	ep.all('userId',function(userId){
+	req.busboy.on('file', function (fieldname, file, filename, encoding, mimetype) {
+		file.on('limit', function(){
+			return res.send({code: '0', msg: '文件过大，最大为' + config.file_limit});
+		});
+		store.uploadHeader(file, {filename: filename}, function(err, result) {
+			if (err) {
+				return next(err);
+			}
+			ep.emit('upFileName',result.newFileName);
+		});
+	});
+
+	ep.all('userId','upFileName',function(userId, fileName) {
 		UserProxy.getUserById(userId, ep.done(function(user){
 			if (!user) {
 				return res.send({cdoe: '0',msg: '用户不存在!'});
 			}
-			ep.emit('upUserHeader',user);
-		}));
-	});
+			// 文件重命名
+			var local_path = config.uploadHeader.filePath;
+			var oldfilePath = local_path + fileName;
+			var newName = userId + path.extname(fileName);
+			var newFilePath = local_path + newName;
+			fs.rename(oldfilePath, newFilePath);
+			var fileUrl = config.uploadHeader.fileUrl + newName;
 
-	ep.all('upUserHeader', function(user){
-		req.busboy.on('file', function (fieldname, file, filename, encoding, mimetype) {
-			file.on('limit', function(){
-				return res.send({code: '0', msg: '文件过大，最大为' + config.file_limit});
-			});
-			console.log('filename:' + filename);
-			store.uploadHeader(file, {filename : user.user_id}, function(err, result) {
-				if (err) {
-					console.log('err' + err);
-					return next(err);
-				}
-				return res.send({code: '200', msg: 'success', url: result.url});
-			});
-		});
+			res.send({code: '200', msg: 'success', url: fileUrl});
+			user.user_head_url = fileUrl;
+			user.save();
+		}));
 	});
 };
 
