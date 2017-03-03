@@ -19,6 +19,7 @@ var apiRouter = require('./api_router');
 var renderMiddleware = require('./middlewares/render');
 var requestLog = require('./middlewares/request_log');
 var logger = require('./common/logger');
+var https = require('https');
 
 require('./middlewares/mongoose_log'); //  mongodb log
 require('./models');
@@ -77,12 +78,22 @@ if (config.debug) {
 app.use('/', apiRouter);
 
 if (!module.parent) {
+  // https
+  https.createServer(config.cerOpt, app).listen(config.port, function(){
+    logger.info('NodeClub listening on port', config.port);
+    logger.info('God bless love....');
+    logger.info('You can debug your app with http://' + config.hostname + ':' + config.port);
+    logger.info('');
+  });
+  // http
+/*
   app.listen(config.port, function () {
     logger.info('NodeClub listening on port', config.port);
     logger.info('God bless love....');
     logger.info('You can debug your app with http://' + config.hostname + ':' + config.port);
     logger.info('');
   });
+*/
 }
 
 module.exports = app;

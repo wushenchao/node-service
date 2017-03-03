@@ -13,7 +13,10 @@ exports.register = function (req, res, next) {
 	ep.fail(next);
 
 	ep.on('prop_err', function(msg) {
-		res.send({cdoe: '0',msg: msg});
+		res.send({
+			cdoe: '0',
+			msg: msg
+		});
 	});
 	// 验证信息的正确性
 	if ([loginname, password].some(function (item) { return item === ''; })) {
@@ -41,7 +44,10 @@ exports.register = function (req, res, next) {
 	ep.all('em_newAndSave', function(data) {
 		tools.bhash(password, ep.done(function (passhash){
 			UserProxy.newAndSave(loginname, loginname, passhash, loginname, ep.done(function(user){
-				res.send({code:'200', msg:'注册成功!'});
+				res.send({
+					code:'200',
+					msg:'success'
+				});
 			}));
 		}));
 	});
@@ -55,7 +61,10 @@ exports.login = function(req, res, next) {
 	ep.fail(next);
 
 	ep.on('prop_err', function(msg) {
-		res.send({cdoe: '0',msg: msg});
+		res.send({
+			cdoe: '0',
+			msg: msg
+		});
 	});
 	// 验证信息的正确性
 	if ([loginname, password].some(function (item) { return item === ''; })) {
@@ -73,7 +82,11 @@ exports.login = function(req, res, next) {
 			if (err || !result) {
 				return ep.emit('prop_err', '用户密码不正确!');
 			}
-			res.send({code: '200', msg: '登陆成功!', data: user});
+			res.send({
+				code: '200',
+				msg: 'success',
+				data: user
+			});
 		});
 	});
 };

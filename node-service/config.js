@@ -1,9 +1,15 @@
-var path = require('path');
-
+/**
+ * config
+ */
+var fs= require('fs');
 var config = {
 	debug: true,
 
 	get mini_assets(){return !this.debug;},
+
+
+	name: 'node app',
+	description: 'This is node js',
 
 	host: 'localhost',
 
@@ -44,6 +50,11 @@ var config = {
 	create_post_per_day: 1000, // 每个用户一天可以发的主题数
 	create_reply_per_day: 1000, // 每个用户一天可以发的评论数
 	visit_per_day: 1000, // 每个 ip 每天能访问的次数
+
+	cerOpt : {
+		key: fs.readFileSync('./privatekey.pem'),
+		cert: fs.readFileSync('./certificate.pem')
+	},
 };
 
 if (process.env.NODE_ENV === 'test') {

@@ -13,14 +13,14 @@ var TopicSchema = new Schema({
 
   // 位置 经纬度
   topic_location: { type: String },
-  topic_longitude: { type: Number, default: 0},
-  topic_latitude: { type: Number, default: 0},
+  topic_longitude: { type: Number, default: 0 },
+  topic_latitude: { type: Number, default: 0 },
 
-  topic_praiseNumber: { type: Number, default: 0},
+  topic_praiseNumber: { type: Number, default: 0 },
   topic_praiseUser: { type: Array},//user_id
 
-  topic_replyNumber: { type: Number, default: 0},
-  topic_replyUsers: { type: Array},//user_id
+  topic_replyNumber: { type: Number, default: 0 },
+  topic_replyUsers: { type: Array },//user_id
 
   user_Id: { type: String },//发布人id
 });

@@ -1,0 +1,9 @@
+{
+    "Expression_1@2x.png": "[微笑]",
+    "Expression_2@2x.png": "[撇嘴]",
+    "Expression_3@2x.png": "[色]",
+    "Expression_4@2x.png": "[发呆]",
+    "Expression_5@2x.png": "[得意]",
+    "Expression_6@2x.png": "[流泪]",
+    "Expression_7@2x.png": "[害羞]"
+}

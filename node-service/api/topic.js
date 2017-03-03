@@ -6,35 +6,50 @@ var _ = require('lodash');
 var fs = require('fs');
 var path = __dirname + '/data.txt';
 
+/**
+ * 发送话题
+ */
 exports.sendTopic = function(req, res, next) {
 	var userId = validator.trim(req.body.userId);
 	var topicTitle = validator.trim(req.body.topicTitle);
 	var topicContent = validator.trim(req.body.topicContent);
 	var topicType = req.body.topicType;
-	var topicImages = req.body.topicImages;
+	var topicImages = req.body.topicImages;//字符串
 	var images = [];
 	if (!validator.isNull(topicImages)) {
 		images = _.split(topicImages,',');
 	}
-	
 	TopicProxy.newAndSave(topicTitle, topicType, topicContent, images, userId, function(err) {
 		if (err) {
-			return res.send({cdoe: '0',msg: '数据保存失败'});
+			return res.send({
+				code: '0',
+				msg: '数据保存失败'
+			});
 		}
-		res.send({cdoe: '200',msg: 'success'});
+		res.send({
+			code: '200',
+			msg: 'success'
+		});
 	});
 };
 
+/**
+ * 给话题点赞
+ */
 exports.praiseTopic = function(req, res, next) {
 	var userId = req.body.userId;
 	var topicId = req.body.topicId;
 	console.log('userId:' + userId + ' topicId:' + topicId);
+
 	var ep = new eventproxy();
 	ep.fail(next);
-
 	ep.on('prop_err', function(msg) {
-		res.send({cdoe: '0',msg: msg});
+		res.send({
+			code: '0',
+			msg: msg
+		});
 	});
+
 	TopicProxy.getTopicById(topicId, ep.done(function(topic){
 		if (!topic) {
 			return ep.emit('prop_err','事件不存在！');
@@ -58,21 +73,39 @@ exports.praiseTopic = function(req, res, next) {
 		topic.topic_praiseNumber += 1;
 		topic.topic_praiseUser.push(user.user_id);
 		topic.save();
-		res.send({code:'200', msg : 'success'});
+		res.send({
+			code:'200',
+			msg : 'success'
+		});
 	});
 };
 
+/**
+ * 按时间排序获取数据库话题
+ */
 exports.getTopics = function(req, res, next) {
 	var page = req.body.page;
 	var limit = req.body.limit;
-	TopicProxy.getTopics('', page, limit, function(err, topics){
+	var topicId = req.body.topicId;
+
+	TopicProxy.getTopics(topicId, page, limit, function(err, topics){
 		if (err) {
-			return res.send({code: '0', msg: '查询错误'});
+			return res.send({
+				code: '0',
+				msg: '查询错误'
+			});
 		}
-		res.send({code: '200', msg: 'success', data: topics});
+		res.send({
+			code: '200',
+			msg: 'success',
+			data: topics
+		});
 	});
 };
 
+/**
+ * 获取具体用户的事件
+ */
 exports.getOwnTopics = function(req, res, next) {
 	var userId = req.body.userId;
 	var page = req.body.page;
@@ -81,30 +114,73 @@ exports.getOwnTopics = function(req, res, next) {
 	var ep = new eventproxy();
 	ep.fail(next);
 
+	ep.on('prop_err', function(msg) {
+		res.send({
+			code: '0',
+			msg: msg
+		});
+	});
+
 	UserProxy.getUserById(userId, ep.done(function(user){
 		if (!user) {
-			return res.send({code: '0', msg: '用户不存在!'});
+			return ep.emit('prop_err', '用户不存在!');
 		}
 		ep.emit('user', user);
 	}));
+
 	ep.all('user', function(user){
-		TopicProxy.getTopics(userId , page, limit, function(err, topics){
+		TopicProxy.getOwnTopics(userId , page, limit, function(err, topics){
 			if (err) {
-				return res.send({code: '0', msg: '错误'});
+				return ep.emit('prop_err', '获取话题失败!');
 			}
-			res.send({code: '200', msg: 'success', data: topics});
+			res.send({
+				code: '200',
+				msg: 'success',
+				data: topics
+			});
 		});
 	});
 };
 
+/**
+ * 删除话题
+ */
 exports.removeTopic = function(req, res, next){
 	var userId = req.body.userId;
 	var topicId = req.body.topicId;
-	
+
+	var ep = new eventproxy();
+	ep.fail(next);
+
+	ep.on('prop_err', function(msg) {
+		res.send({
+			code: '0',
+			msg: msg
+		});
+	});
+
+	UserProxy.getUserById(userId, ep.done(function(user){
+		if (!user) {
+			return ep.emit('prop_err', '用户不存在!');
+		}
+		ep.emit('user', user);
+	}));
+
+	ep.all('user', function(user) {
+		TopicProxy.removeByTopicId(topicId, userId, function(err){
+			if (err) {
+				return ep.emit('prop_err', '删除话题失败!');
+			}
+			res.send({
+				code: '200',
+				msg: 'success'
+			});
+		});
+	});
 };
 
 
-
+//////////////////////////////////////////////////////////////////////////////////
 // GET
 exports.textSendTopic = function(req, res, next) {
 	var userId = req.params.userId;

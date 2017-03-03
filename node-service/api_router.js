@@ -20,11 +20,13 @@ router.post('/sendTopic', topic.sendTopic);
 router.post('/praiseTopic', topic.praiseTopic);
 router.post('/getTopics',topic.getTopics);
 router.post('/getOwnTopics',topic.getOwnTopics);
+router.post('/removeTopic',topic.removeTopic);
 
 // reply
 router.post('./replyTopic',reply.replyTopic);
 
-
+// pingpp
+router.get('/userPay', user.userPay);
 router.get('/userInfo/:name', user.userInfo);
 // topic
 router.get('/textSendTopic/:userId',topic.textSendTopic);

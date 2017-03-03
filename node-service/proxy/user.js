@@ -31,7 +31,6 @@ exports.newAndSave = function (user_name, user_loginname, user_pass, user_imId, 
  * - err, 数据库异常
  * - users, 用户列表
  * @param {Array} names 用户名列表
- * @param {Function} callback 回调函数
  */
 exports.getUsersByNames = function (names, callback) {
   if (names.length === 0) {

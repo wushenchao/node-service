@@ -38,7 +38,7 @@ exports.getReplyByReplyId = function(reply_id, callback){
  * @param  {[type]}   user_id  用户id
  */
 exports.removeByReplyId = function(reply_id, user_id, callback){
-	Reply.remove({reply_id: reply_id, reply_user_id: user_id}, callback);
+	Reply.remove({reply_id: reply_id}, callback);
 };
 
 /**
